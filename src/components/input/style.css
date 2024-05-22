@@ -1,0 +1,28 @@
+.formulaire {
+    width: 100%;
+}
+
+.text_field {
+    border-radius: 4px;
+    height: 30px;
+    width: 60vh;
+    margin-right: 10px;
+    padding: 0 6px;
+    border: solid 2px gray;
+}
+
+.text_field:focus {
+    outline: none;
+    border: solid 2px rgb(164, 85, 243);
+}
+
+.submit_button {
+    height: 34px;
+    background-color: rgb(146, 47, 245);
+    font-weight: bold;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    width: 100px;
+}
