@@ -26,3 +26,8 @@
     border-radius: 4px;
     width: 100px;
 }
+
+.submit_button:active {
+    background-color: rgb(85, 4, 165);
+    transition-duration: 500ms;
+}

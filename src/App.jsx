@@ -6,13 +6,22 @@ import { IoIosNotifications } from 'react-icons/io';
 import Input from './components/input/Input';
 import TasksContainer from './components/tasks/tasks';
 
+
 export default function App() {
 
-  const notify = () => toast('Bonjour Cynthia Rosssss.', {
+  const [nouvelleTache, setNouvelleTache] = React.useState('');
+
+  const creerNouvelleTache = (tache) => {
+
+  }
+
+  // Notification.
+  const notify = (message) => toast(message, {
     position: 'bottom-center',
     icon: <IoIosNotifications />,
     duration: 2000
   });
+
 
   return (
     <div style={{
@@ -22,7 +31,7 @@ export default function App() {
     }}>
       <h1>Todo App</h1>
       <div style={{ widht: '100%' }}>
-        <Input />
+        <Input value={nouvelleTache} setValue={setNouvelleTache} />
       </div>
 
       <div style={{ width: '100vw' }}>

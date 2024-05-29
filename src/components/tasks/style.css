@@ -21,6 +21,8 @@
 
 .task span {
     width: 80%;
+    max-width: 80%;
+    margin-right: 10px;
 }
 
 .button_group {
